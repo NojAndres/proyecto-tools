@@ -1,0 +1,69 @@
+:root {
+  --primary-color: hsl(0, 0%, 21%);
+  --secondary-color: #515e63;
+  --tertiary-color: #57837b;
+  --quanternary-color: #c9d8b6;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*------------- ContainerCards -------------*/
+#containerCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+@media (min-width: 760px) {
+  #containerCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #containerCard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  #containerCard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*------------- Card -------------*/
+
+.imagenLogo {
+  margin: auto;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+/*------------- Footer -------------*/
+
+footer {
+  background: var(--primary-color);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.logoImage {
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+/*------------- main -------------*/
+main {
+  min-height: 100vh;
+}
