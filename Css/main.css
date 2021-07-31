@@ -21,6 +21,11 @@
 }
 
 @media (min-width: 760px) {
+  .navbar-brand {
+    display: flex;
+    flex-flow: column;
+  }
+
   #containerCard {
     grid-template-columns: repeat(2, 1fr);
   }
