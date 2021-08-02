@@ -13,6 +13,11 @@
   text-decoration: none;
 }
 
+@media (min-width: 760px) {
+  .desplay {
+    display: none;
+  }
+}
 /*------------- ContainerCards -------------*/
 #containerCard {
   display: grid;
